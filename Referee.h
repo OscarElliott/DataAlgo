@@ -1,5 +1,5 @@
-#ifndef o_h
-#define o_h
+#ifndef REFEREE_h
+#define REFEREE_h
 
 #include <iostream>
 #include <string>
