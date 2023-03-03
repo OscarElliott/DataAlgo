@@ -12,7 +12,7 @@ int main() {
 
     for (int i = 0; i < 3; i++) {
         ref.refGame(human, computer);
-        cout << endl;
+        std::cout << std::endl;
     }
 
     delete human;
