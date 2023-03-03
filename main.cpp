@@ -15,7 +15,7 @@ int main() {
         std::cout << std::endl;
     }
 
-    delete human; -
+    delete human;
     delete computer;
 
     return 0;
