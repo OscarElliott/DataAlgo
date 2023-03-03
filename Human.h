@@ -2,6 +2,7 @@
 #ifndef HUMAN_h
 #define HUMAN_h
 
+#include <string>
 #include "Player.h"
 
 class Human: public Player {

@@ -2,6 +2,7 @@
 #ifndef COMPUTER_h
 #define COMPUTER_h
 
+#include <string>
 #include "Player.h"
 
 class Computer: public Player {
