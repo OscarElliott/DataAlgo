@@ -11,8 +11,9 @@ class Referee{
 
     public:
 
-    Referee(); //default constructor
-    Player * refGame(Player * player1, Player * player2) // determines winner by comparing moves
+   Referee::Referee(){}; //default constructor
+
+    Referee::Player * refGame(Player * player1, Player * player2){ 
         char move1 = player1->makeMove(); // player 1's move
         char move2 = player2->makeMove(); // player 2's move
 
@@ -25,6 +26,8 @@ class Referee{
         else {
             std::cout << p2->getName() << " wins" << std::endl;
         }
+    } 
+    
 
     
-}
+};

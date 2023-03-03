@@ -1,20 +1,22 @@
 // inherits from player
+#include "Player.h"
+#include "Human.h"
 
 
 
 class Human: public Player {
     private:
-        string name;
+        std::string name;
         char move;
     public:
-    Human(string n = "Human") {
+    Human::Human(std::string n = "Human") {
         name = n;
     }
-    string getName() {
+    Human::std::string getName() {
         return name;
     }
 
-    char makeMove() {
+    Human::char makeMove() {
         char move;
         std::cout << "Enter move";
         std::cin >> move;
@@ -24,4 +26,4 @@ class Human: public Player {
     
 
 
-}
+};

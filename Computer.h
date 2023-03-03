@@ -7,11 +7,11 @@
 
 class Computer: public Player {
     private:
-        string name; //name of player/computer
+        std::string name; //name of player/computer
     public:
-    Computer(string n = "Computer"); // default constructor
-    string getName(); // returns name of computer
+    Computer(std::string n = "Computer"); // default constructor
+    std::string getName(); // returns name of computer
     char makeMove(); // returns move made by computer
-}
+};
 
 #endif

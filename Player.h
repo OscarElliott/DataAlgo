@@ -6,8 +6,8 @@
 class Player{
 
     virtual char makeMove( );
-    virtual string getName( );
+    virtual std::string getName( );
     
-}
+};
 
 #endif
