@@ -3,13 +3,11 @@
 
 #include <iostream>
 #include <string>
-
+#include "Player.h"
 
 class Referee{
 
     public:
-
-    Winner *winner
 
     Referee(); //default constructor
     Player * refGame(Player * player1, Player * player2)
