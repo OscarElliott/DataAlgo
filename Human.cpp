@@ -5,7 +5,7 @@
     Human::Human(std::string n = "Human") {
         name = n;
     }
-    std::string Human::getName() {
+    Human::std::string getName() {
         return name;
     }
 
