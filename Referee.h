@@ -1,8 +1,6 @@
 #ifndef REFEREE_h
 #define REFEREE_h
 
-#include <iostream>
-#include <string>
 #include "Player.h"
 
 class Referee{
