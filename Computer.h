@@ -1,6 +1,6 @@
 // header for human class
-#ifndef o_h
-#define o_h
+#ifndef COMPUTER_h
+#define COMPUTER_h
 
 #include <iostream>
 #include "Player.h"

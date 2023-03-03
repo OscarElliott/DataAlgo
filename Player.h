@@ -1,5 +1,5 @@
-#ifndef o_h
-#define o_h
+#ifndef PLAYER_h
+#define PLAYER_h
 
 #include <iostream>
 

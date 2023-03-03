@@ -2,13 +2,6 @@
 #include "Player.h"
 #include "Human.h"
 
-
-
-class Human: public Player {
-    private:
-        std::string name;
-        char move;
-    public:
     Human::Human(std::string n = "Human") {
         name = n;
     }
