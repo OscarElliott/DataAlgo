@@ -7,8 +7,8 @@
     {
         "label": "echo",
         "type": "shell",
-        "command": "gcc",
-        "args": ["g","main.cpp"],
+        "command": "g++",
+        "args": ["g","test.cpp"],
         "group": {
             "kind": "build",
             "isDefault": true
