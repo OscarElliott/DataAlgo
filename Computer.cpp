@@ -2,11 +2,6 @@
 #include "Player.h"
 #include "Computer.h"
 
-
-class Computer: public Player {
-    private:
-        std::string name; //name of player/computer
-    public:
     Computer::Computer(stdin::string n = "Computer"); // default constructor
     Computer::std::string getName(){
         return name;
@@ -15,4 +10,3 @@ class Computer: public Player {
         return 'R'; //
     } // computer always plays rock
 
-};

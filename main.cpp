@@ -2,7 +2,7 @@
 #include "Computer.h"
 #include "Human.h"
 #include "Referee.h"
-
+#include <iostream>
 
 
 int main() {

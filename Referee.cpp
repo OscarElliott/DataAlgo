@@ -6,11 +6,6 @@
 #include "Human.h"
 
 
-
-class Referee{
-
-    public:
-
    Referee::Referee(){}; //default constructor
 
     Referee::Player * refGame(Player * player1, Player * player2){ 
@@ -26,8 +21,7 @@ class Referee{
         else {
             std::cout << p2->getName() << " wins" << std::endl;
         }
-    } 
-    
+
+    };
 
     
-};
