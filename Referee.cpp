@@ -5,9 +5,9 @@
 #include "Human.h"
 
 
-   Referee::Referee(){}; //default constructor
+    Referee::Referee(){}; //default constructor
 
-    Referee::Player * refGame(Player * player1, Player * player2){ 
+    Player * Referee::refGame(Player * player1, Player * player2){ 
         char move1 = player1->makeMove(); // player 1's move
         char move2 = player2->makeMove(); // player 2's move
 
