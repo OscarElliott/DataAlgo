@@ -2,7 +2,7 @@
 #include "Player.h"
 #include "Human.h"
 
-    Human::Human(std::string n = "Human") {
+    Human::Human(std::string n) {
         name = n;
     }
     Human::std::string getName() {
@@ -15,8 +15,5 @@
         std::cin >> move;
         return move;
     }
-
-    
-
 
 };
