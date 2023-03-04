@@ -3,6 +3,7 @@
 #include "Player.h"
 #include "Computer.h"
 #include "Human.h"
+#include <iostream>
 
 
     Referee::Referee(){}; //default constructor
@@ -16,11 +17,11 @@
         return nullptr;
          }
         else if ((move1 == 'R' && move2 == 'S') || (move1 == 'P' && move2 == 'R') || (move1 == 'S' && move2 == 'P')) {
-        std::cout << player1->getName() << " wins!" << std::endl;
+        std::cout << player1->getName() << " wins" << std::endl;
         return player1;
         }
         else {
-        std::cout << player2->getName() << " wins!" << std::endl;
+        std::cout << player2->getName() << " wins" << std::endl;
         return player2;
         }
     }
