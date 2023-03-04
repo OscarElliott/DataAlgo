@@ -2,11 +2,11 @@
 #include "Player.h"
 #include "Computer.h"
 
-    Computer::Computer(stdin::string n = "Computer"); // default constructor
-    Computer::std::string getName(){
+    Computer::Computer(std::string n){}; // default constructor
+    std::string Computer::getName(){
         return name;
     } // returns name of computer
-    Computer::char makeMove(){
+    char Computer::makeMove(){
         return 'R'; //
     } // computer always plays rock
 

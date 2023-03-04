@@ -1,15 +1,17 @@
 // inherits from player
 #include "Player.h"
 #include "Human.h"
+#include <iostream>
 
     Human::Human(std::string n) {
         name = n;
     }
-    Human::std::string getName() {
+
+    std::string Human::getName() {
         return name;
     }
 
-    Human::char makeMove() {
+    char Human::makeMove() {
         char move;
         std::cout << "Enter move";
         std::cin >> move;
