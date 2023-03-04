@@ -13,7 +13,7 @@
         char move2 = player2->makeMove(); // player 2's move
 
         if (move1 == move2) {
-        std::cout << "Tie!" << std::endl;
+        std::cout << "Tie" << std::endl;
         return nullptr;
          }
         else if ((move1 == 'R' && move2 == 'S') || (move1 == 'P' && move2 == 'R') || (move1 == 'S' && move2 == 'P')) {

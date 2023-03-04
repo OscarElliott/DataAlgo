@@ -10,16 +10,10 @@ int main() {
     Player* human = new Human();
     Player* computer = new Computer();
 
-    for (int i = 0; i < 3; i++) {
-        Player * winner = ref.refGame(human, computer);
-        if(winner == nullptr) {
-            std::cout << "Tie" << std::endl;
-        }
-        else {
-            std::cout << winner->getName() << std::endl;
-        }
-        std::cout << std::endl;
-    }
+ 
+    Player * winner = ref.refGame(human, computer);
+        
+        
 
     delete human;
     delete computer;

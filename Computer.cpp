@@ -2,7 +2,9 @@
 #include "Player.h"
 #include "Computer.h"
 
-    Computer::Computer(std::string n){}; // default constructor
+    Computer::Computer(std::string n){
+        name = n;
+    }; // default constructor
     std::string Computer::getName(){
         return name;
     } // returns name of computer
