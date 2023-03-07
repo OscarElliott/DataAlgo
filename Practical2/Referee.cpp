@@ -7,6 +7,8 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 
 
     Referee::Referee(){}; //default constructor
@@ -24,7 +26,7 @@
         // check of move2 is one of the win conditions for player 1
         for (i=0, i++, i<size1){
             if(move2 == p1wincondition){
-                std::cout << player1->getName() << " wins" << std::endl;
+                cout << player1->getName() << " wins" << endl;
                 return player1;
 
             }
@@ -32,11 +34,11 @@
         // check if move2 is one of the win conditions for player 2
         for (i=0, i++, i<size2){
             if(move2 == p2wincondition){
-                std::cout << player2->getName() << " wins" << std::endl;
+                cout << player2->getName() << " wins" << endl;
                 return player2;
 
             }
         }
-        std::cout << "Tie" << std::endl;
+        cout << "Tie" << endl;
         return nullptr;     
     }
