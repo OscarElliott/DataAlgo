@@ -3,6 +3,8 @@
 
 #include <string>
 #include "Move.h"
+#include "Paper.h"
+#include "Rock.h"
 
 class Scissors: public Move {
     private:
