@@ -9,17 +9,17 @@ string Move::getName(){
 }
 
 // Allows to set name which is private with public function
-void setName(string newname){
+void Move::setName(string newname){
     name = newname;
 }
 
 
 // returns list of moves given move beats
-vector<Move> getWins(){
+vector<Move> Move::getWins(){
     return victory;
 }
 
 // returns list of moves given move losses too
-vector<Move> getLosses(){
+vector<Move> Move::getLosses(){
     return defeat;
 }
