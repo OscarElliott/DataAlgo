@@ -22,11 +22,11 @@ Move * Human::makeMove() {
     string move;
     cout << "Enter move: ";
     cin >> move;
-    if (move == "rock") {
+    if (move == "Rock") {
         return new Rock();
-    } else if (move == "paper") {
+    } else if (move == "Paper") {
         return new Paper();
-    } else if (move == "scissors") {
+    } else if (move == "Scissors") {
         return new Scissors();
     } else {
         // to avoid crashes for invalid moves
