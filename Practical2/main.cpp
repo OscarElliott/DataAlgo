@@ -14,7 +14,7 @@ int main() {
     Player* human2 = new Human();
 
  
-    Player * winner = ref.refGame(human, computer);
+    Player * winner = ref.refGame(human1, human2);
         
         
 

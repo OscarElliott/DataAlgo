@@ -16,7 +16,7 @@ std::string Computer::getName(){
 // computer always plays rock
 Move * Computer::makeMove() {
     Move* pmove = new Move();
-    std::string move = rock;
+    std::string move = "Rock";
     pmove->setName(move);
     return pmove;
 }
