@@ -15,11 +15,11 @@ void Move::setName(string newname){
 
 
 // returns list of moves given move beats
-vector<Move> Move::getWins(){
+vector<Move*> Move::getWins(){
     return victory;
 }
 
 // returns list of moves given move losses too
-vector<Move> Move::getLosses(){
+vector<Move*> Move::getLosses(){
     return defeat;
 }
