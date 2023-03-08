@@ -2,6 +2,7 @@
 #define SCISSORS_h
 
 #include <string>
+#include <vector>
 #include "Move.h"
 #include "Paper.h"
 #include "Rock.h"

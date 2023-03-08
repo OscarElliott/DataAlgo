@@ -2,6 +2,7 @@
 #define PAPER_h
 
 #include <string>
+#include <vector>
 #include "Move.h"
 #include "Rock.h"
 #include "Scissors.h"

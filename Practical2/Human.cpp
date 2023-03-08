@@ -2,13 +2,19 @@
 #include "Player.h"
 #include "Human.h"
 #include "Move.h"
+#include "Rock.h"
+#include "Paper.h"
+#include "Scissors.h"
 #include <iostream>
 
-Human::Human(std::string n) {
+using namespace std;
+
+
+Human::Human(string n) {
     name = n;
 }
 
-std::string Human::getName() {
+string Human::getName() {
     return name;
 }
 

@@ -21,8 +21,8 @@ using namespace std;
         vector<Move> p1wincondition = move1->getWins();
         vector<Move> p2wincondition = move1->getLosses();
         // record size of both vectors for use in loops
-        size1 = p1wincondition.size();
-        size2 = p2wincondition.size();
+        int size1 = p1wincondition.size();
+        int size2 = p2wincondition.size();
         // check of move2 is one of the win conditions for player 1
         for (i=0, i++, i<size1) {
             if(move2 == p1wincondition) {
