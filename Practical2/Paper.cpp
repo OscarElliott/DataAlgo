@@ -5,7 +5,7 @@
 
 
 
-Paper::Paper(std::string n = "Paper") {
+Paper::Paper(std::string n = "Paper") : name(n) {
     victory.push_back(new Rock());
     defeat.push_back(new Scissors());
 

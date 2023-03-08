@@ -7,8 +7,8 @@
 class Move{
     private:
         std::string name; //name of Move
-        std::vector<Move> victory{}; // list of moves this move beats
-        std::vector<Move> defeat{}; // list of moves this move losses to
+        std::vector<Move*> victory; // list of moves this move beats
+        std::vector<Move*> defeat; // list of moves this move losses to
     public:
         Move(std::string n = "Move"); // move constructor, default name for Move is Move
         std::string getName(); //returns the name of a Move instance, for example "Ninja".  This function exists purely so I can do some tests.  I don't expect you to call it in your code other than while testing.
