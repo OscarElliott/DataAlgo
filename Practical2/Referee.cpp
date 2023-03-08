@@ -18,8 +18,8 @@ using namespace std;
         Move * move2 = player2->makeMove(); // player 2's Move object
         
         // make local vector with list of win and loss conditions
-        vector<Move> p1wincondition = move1->getWins();
-        vector<Move> p2wincondition = move1->getLosses();
+        vector<Move*> p1wincondition = move1->getWins();
+        vector<Move*> p2wincondition = move1->getLosses();
         // record size of both vectors for use in loops
         int size1 = p1wincondition.size();
         int size2 = p2wincondition.size();
