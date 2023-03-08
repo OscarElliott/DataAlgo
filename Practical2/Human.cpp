@@ -18,17 +18,19 @@ string Human::getName() {
     return name;
 }
 
-Move * Human::makeMove() {
-    string move;
+Move* Human::makeMove() {
+    string pmove;
     cout << "Enter move: ";
-    cin >> move;
-    cout << "hi";
-    if (move == "Rock") {
-        return new Rock();
-    } else if (move == "Paper") {
-        return new Paper();
-    } else if (move == "Scissors") {
-        return new Scissors();
+    cin >> pmove
+    if (pmove == "Rock") {
+        Move* r1 = new Rock();
+        return r1;
+    } else if (pmove == "Paper") {
+        Move* p1 = new Paper();
+        return p1;
+    } else if (pmove == "Scissors") {
+        Move* s1 = new Scissors();
+        return s1;
     } else {
         // to avoid crashes for invalid moves
         cout << "Error: invalid Move";
