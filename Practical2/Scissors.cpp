@@ -4,7 +4,7 @@
 #include "Rock.h"
 
 
-Scissors::Scissors(std::string n = "Scissors") : name(n) {
+Scissors::Scissors(std::string n) : name(n) {
     victory.push_back(new Paper());
     defeat.push_back(new Rock());
 

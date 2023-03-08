@@ -2,11 +2,12 @@
 #include "Player.h"
 #include "Computer.h"
 #include "Move.h"
+#include "Rock.h"
 
  // default constructor
 Computer::Computer(std::string n){
     name = n;
-};
+}
 
 // returns name of computer
 std::string Computer::getName(){
@@ -14,9 +15,7 @@ std::string Computer::getName(){
 } 
 
 // computer always plays rock
-Move * Computer::makeMove() {
-    Move* pmove = new Move();
-    std::string move = "Rock";
-    pmove->setName(move);
+Move* Computer::makeMove() {
+    Move* pmove = new Rock();
     return pmove;
 }

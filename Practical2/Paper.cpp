@@ -5,9 +5,10 @@
 
 
 
-Paper::Paper(std::string n = "Paper") : name(n) {
+Paper::Paper(std::string n) : name (n) {
     victory.push_back(new Rock());
     defeat.push_back(new Scissors());
 
 
 }
+
