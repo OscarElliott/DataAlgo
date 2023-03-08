@@ -24,16 +24,16 @@ using namespace std;
         int size1 = p1wincondition.size();
         int size2 = p2wincondition.size();
         // check of move2 is one of the win conditions for player 1
-        for (i=0, i++, i<size1) {
-            if(move2 == p1wincondition) {
+        for (int i=0; i++; i<size1;) {
+            if(move2 == p1wincondition[i]) {
                 cout << player1->getName() << " wins" << endl;
                 return player1;
 
             }
         };
         // check if move2 is one of the win conditions for player 2
-        for (i=0, i++, i<size2) {
-            if(move2 == p2wincondition){
+        for (int i=0; i++; i<size2;) {
+            if(move2 == p2wincondition[i]){
                 cout << player2->getName() << " wins" << endl;
                 return player2;
 
