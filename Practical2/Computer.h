@@ -4,14 +4,16 @@
 
 #include <string>
 #include "Player.h"
+#include "Move.h"
 
 class Computer: public Player {
     private:
         std::string name; //name of player/computer
+        Move move; // move chosen by computer
     public:
     Computer(std::string n = "Computer"); // default constructor
     std::string getName(); // returns name of computer
-    char makeMove(); // returns move made by computer
+    Move * makeMove(); // returns move made by computer
 };
 
 #endif
