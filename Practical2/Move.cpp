@@ -8,6 +8,12 @@ string Move::getName(){
     return name;
 }
 
+// Allows to set name which is private with public function
+std::string setName(char newname){
+    name = newname;
+}
+
+
 // returns list of moves given move beats
 vector<Move> getWins(){
     return victory;
