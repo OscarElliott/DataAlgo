@@ -14,7 +14,7 @@ std::string Human::getName() {
 
 Move * Human::makeMove() {
     Move pmove;
-    char move;
+    std::string move;
         std::cout << "Enter move";
         std::cin >> move;
         pmove.setName(move);
