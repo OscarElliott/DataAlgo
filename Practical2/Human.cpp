@@ -13,7 +13,7 @@ std::string Human::getName() {
 }
 
 Move * Human::makeMove() {
-    Move pmove;
+    pmove = new Move;
     std::string move;
         std::cout << "Enter move";
         std::cin >> move;
