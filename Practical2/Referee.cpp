@@ -13,13 +13,14 @@ using namespace std;
 
     Referee::Referee(){}; //default constructor
 
-    Player * Referee::refGame(Player * player1, Player * player2){ 
+    Player* Referee::refGame(Player * player1, Player * player2){ 
         Move * move1 = player1->makeMove(); // player 1's Move object
         Move * move2 = player2->makeMove(); // player 2's Move object
-        
+        cout << "moves called";
         // make local vector with list of win and loss conditions
         vector<Move*> p1wincondition = move1->getWins();
         vector<Move*> p2wincondition = move1->getLosses();
+        cout << "win com set";
         // record size of both vectors for use in loops
         int size1 = p1wincondition.size();
         int size2 = p2wincondition.size();

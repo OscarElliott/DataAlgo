@@ -13,9 +13,9 @@ int main() {
     Referee ref;
     Player* human = new Human();
     Player* computer = new Computer();
-
+    std::cout << "players made";
  
-    Player * winner = ref.refGame(human, computer);
+    Player* winner = ref.refGame(human, computer);
         
         
 

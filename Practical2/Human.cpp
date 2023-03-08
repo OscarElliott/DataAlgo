@@ -22,6 +22,7 @@ Move * Human::makeMove() {
     string move;
     cout << "Enter move: ";
     cin >> move;
+    cout << "hi";
     if (move == "Rock") {
         return new Rock();
     } else if (move == "Paper") {
@@ -30,6 +31,7 @@ Move * Human::makeMove() {
         return new Scissors();
     } else {
         // to avoid crashes for invalid moves
+        cout << "Error: invalid Move";
         return nullptr;
     }
 }
