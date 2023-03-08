@@ -11,6 +11,9 @@ class Paper: public Move {
         std::string name; //name of Move
         std::vector<Move> victory{Rock}; // list of moves this move beats
         std::vector<Move> defeat{Scissors}; // list of moves this move losses to
+    public:
+        Paper(std::string n = "Paper"); // Paper constructor, default name for paper is paper
+
 };
 
 #endif

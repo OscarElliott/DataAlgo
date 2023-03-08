@@ -13,10 +13,17 @@ std::string Human::getName() {
 }
 
 Move * Human::makeMove() {
-    Move* pmove = new Move();
-    std::string move;
-        std::cout << "Enter move";
-        std::cin >> move;
-        pmove->setName(move);
-        return pmove;
+    string move;
+    cout << "Enter move: ";
+    cin >> move;
+    if (move == "rock") {
+        return new Rock();
+    } else if (move == "paper") {
+        return new Paper();
+    } else if (move == "scissors") {
+        return new Scissors();
+    } else {
+        // to avoid crashes for invalid moves
+        return nullptr;
+    }
 }
