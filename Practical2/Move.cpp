@@ -9,7 +9,7 @@ string Move::getName(){
 }
 
 // Allows to set name which is private with public function
-std::string setName(char newname){
+void setName(char newname){
     name = newname;
 }
 

@@ -17,6 +17,6 @@ Move * Human::makeMove() {
     char move;
         std::cout << "Enter move";
         std::cin >> move;
-        pmove.setName = move;
-        return *pmove;
+        pmove.setName(move);
+        return &pmove;
     }
