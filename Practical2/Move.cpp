@@ -3,6 +3,9 @@
 
 using namespace std;
 
+// move constructor
+Move::Move(string n){}
+
 //returns the name of a Move instance, for example "Ninja".
 string Move::getName(){
     return name;

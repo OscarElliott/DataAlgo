@@ -1,5 +1,6 @@
 #include "Player.h"
 #include "Human.h"
+#include "Computer.h"
 #include "Referee.h"
 #include "Move.h"
 #include "Scissors.h"
@@ -10,16 +11,16 @@
 
 int main() {
     Referee ref;
-    Player* human1 = new Human();
-    Player* human2 = new Human();
+    Player* human = new Human();
+    Player* computer = new Computer();
 
  
-    Player * winner = ref.refGame(human1, human2);
+    Player * winner = ref.refGame(human, computer);
         
         
 
-    delete human1;
-    delete human2;
+    delete human;
+    delete computer;
 
     return 0;
 }
